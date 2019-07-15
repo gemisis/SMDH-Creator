@@ -1,0 +1,214 @@
+/* SMDH Creator by Marc Robledo 2015 */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+h1,#file-form,#lang-info{display:none}
+
+
+
+.home-block{
+	max-width:640px;
+	margin:60px auto 0;
+	padding:20px;
+	color:black;
+	text-shadow:initial;
+	border-radius:8px;
+	line-height:3;
+	background-color:#191919
+}
+.row{
+	position:relative;
+	padding-left:36%
+}
+.label{
+	display:block;
+	position:absolute;
+	top:0;left:0;
+	width:34%;
+	text-align:right
+}
+
+
+
+canvas{
+	image-rendering:optimizeSpeed;
+	image-rendering:-moz-crisp-edges;
+	image-rendering:-webkit-optimize-contrast;
+	image-rendering:optimize-contrast;
+	image-rendering:pixelated;
+	-ms-interpolation-mode:nearest-neighbor;
+	padding:4px !important;
+	cursor:pointer;
+}
+#big-icon{width:96px;height:96px;border:}
+#small-icon{width:48px;height:48px}
+
+
+
+.input{
+	padding:6px 8px;
+	width:240px;
+	font:14px sans-serif;
+	border:1px solid #888
+}
+.input2:focus{
+	box-shadow:#70e9ff 0 0 4px 1px;
+	border-color:#00d8ff;
+}
+.button{
+	font:14px sans-serif;
+	padding:6px 12px;
+	background-color:#f0f0f0;
+	box-shadow:0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
+	text-shadow:0 1px 0 #f8f8f8;
+	border:none;
+	color:#333;
+
+	background-image:linear-gradient(to bottom, #fff, #e6e6e6);
+	background-repeat:repeat-x;
+	border-width:1px;
+	border-style:solid;
+	border-color:#ccc #ccc #b3b3b3;
+	border-radius:2px;
+}
+.button:disabled{opacity:.35}
+.button:hover{
+	background-image:none;
+	background-color:#e0e0e0;
+	background-image:linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+	text-shadow:none;
+	color:#444;
+}
+.button:active,.button.active{
+	background-image:none;
+	transform:translate(0px,1px);
+	background-color:#ddd;
+	border-color:#888;
+	text-shadow:none;
+	box-shadow:0 2px 8px -3px rgba(0, 0, 0, 0.75) inset;
+}
+.blue-button{
+	background-color:#21759B !important;
+	background-image:linear-gradient(to bottom, #2A95C5, #21759B) !important;
+	border-color:#21759B #21759B #1E6A8D !important;
+	text-shadow:0 -1px 0 #20749a !important;
+	color:white !important;
+}
+.blue-button:hover{
+	background-color:#278AB7 !important;
+	background-image:linear-gradient(to bottom, #2E9FD2, #21759B) !important;
+	border-color:#1B607F !important;
+	text-shadow:0 -1px 0 #1b6080 !important;
+	color:white !important;
+}
+.blue-button:active{
+	background:linear-gradient(to bottom, #21759B, #278AB7) repeat scroll 0 0 #1B607F !important;
+	border-color:#124560 #0e74a3 #0e74a3 !important;
+	text-shadow:0 -1px 0 #177ea4 !important;
+	color:#dde7ec !important;
+}
+
+
+
+.flag{background-image:url(flags.png);width:16px;height:11px;display:inline-block}
+.flag0{background-position:0px 0px}
+.flag1{background-position:-16px 0px}
+.flag2{background-position:-32px 0px}
+.flag3{background-position:-48px 0px}
+.flag4{background-position:-64px 0px}
+.flag5{background-position:-80px 0px}
+.flag6{background-position:-96px 0px}
+.flag7{background-position:-112px 0px}
+.flag8{background-position:-128px 0px}
+.flag9{background-position:-144px 0px}
+.flag10{background-position:-160px 0px}
+.flag11{background-position:-176px 0px}
+
+
+	
+#contributions{position:absolute;bottom:20px;right:20px;padding:16px 24px;color:black;border-radius:8px;background-color:#f8f5aa}
+.donate-button{
+	background-color:#59b259 !important;
+	background-image:linear-gradient(to bottom, #61c261, #51a351) !important;
+	border-color:#52a452 #4f9f4f #448944 !important;
+	text-shadow:0 -1px 0 #37a137 !important;
+	color:white !important;
+	text-decoration:none;
+	font:bold 15px sans-serif;
+	margin-left:20px;
+}
+.donate-button:hover{
+	background-color:#278AB7 !important;
+	background-image:linear-gradient(to bottom, #64ce64, #51a351) !important;
+	border-color:#3f7f3f !important;
+	text-shadow:0 -1px 0 #1c9216 !important;
+	color:white !important;
+}
+.donate-button:active{
+	background:linear-gradient(to bottom, #1e8f22, #23a627) repeat scroll 0 0 #219b24 !important;
+	border-color:#105815 #17941b #17941b !important;
+	text-shadow:0 -1px 0 #17a417 !important;
+	color:#ddece0 !important;
+}
+
+
+
+#footer{background:url(smdh_creator.png) no-repeat;background-size:56px 56px;padding-left:64px;position:absolute;bottom:20px;left:20px;line-height:1.7;color:white;text-shadow:#1a425b 0 0 8px}
+#footer a{color:white}
+#footer a:hover{color:#bce0f6}
+#author{font-size:120%;font-weight:bold}
+#author small{font-size:80%;font-weight:normal}
+#thanks{font-size:80%}
+#extra{font-size:80%}
+
+
+
+/* responsive design */
+@media only screen and (max-width:841px){
+	.home-block{margin-top:80px}
+	#footer{bottom:auto;top:10px}
+}
+@media only screen and (max-width:641px){
+	.home-block,.button,.input{font-size:13px}
+	#contributions{position:static;margin-top:10px;text-align:center}
+}
+@media only screen and (max-width:481px){
+	.home-block,.button,.input{font-size:12px}
+	.input{width:90%}
+	#contributions .button{display:block;margin-top:20px}
+/*Stuff i added */
+}
+.input:focus{
+  width: 240px;
+  border-color: #2ecc71;
+}
+.input:focus{
+  border:0;
+  background: none;
+  display: block;
+  text-align: left;
+  border: 2px solid #228B22;
+  padding: 8px 10px;
+  width: 240px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.input{
+ border:0;
+  background: none;
+  display: block;
+  text-align: left;
+  border: 2px solid #3498db;
+  padding: 6px 8px;
+  width: 240px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+
+}

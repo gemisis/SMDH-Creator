@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMDH Creator (3DS homebrew/app icon creator)</title>
+	<link rel="shortcut icon" href="./smdh_creator.png" />
+	<meta http-equiv="content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="description" content="An online SMDH file format creator/editor (which can be used to create 3DS homebrew apps icons)." />
+	<meta name="keywords" content="smdh, icon, 3ds, creator, editor, homebrew" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<link type="text/css" rel="stylesheet" href="./smdh_creator.css" media="all"/>
+	<script type="text/javascript" src="./smdh_creator.js"></script>
+
+	<!-- Chrome M46: specify Android bar color -->
+	<meta name="theme-color" content="#4298c5">
+	<!-- Chrome M39 -->
+	<link rel="manifest" href="manifest.json" />
+	<!-- Chrome M31-M38 -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="icon" sizes="128x128" href="favicon.png" />
+</head>
+<body>
+<h1>SMDH Creator</h1>
+<form class="box" id="file-form"><input id="file-load" type="file" onchange="tempFileLoadFunction.call(), el('file-form').reset()"/></form>
+
+
+<div class="home-block">
+	<div class="row">
+		<label for="big-icon" class="label"><font color="white">Icons:</font></label>
+		<canvas id="big-icon" class="button" onclick="clickImportBigCanvas()"></canvas>
+		<canvas id="small-icon" class="button" onclick="clickImportSmallCanvas()"></canvas><br/>
+		<input type="checkbox" checked="checked" id="both-icons" /> <label for="both-icons"><font color="white"> Update both when importing</font></label>
+	</div>
+	<div>
+	<style>
+	.row {
+  padding-bottom:10px;
+}
+	</style>
+	<div>
+	<div id="langs">
+		<div class="row" id="row-short-description">
+			<label for="short-description" class="label"><font color="white">Short description:</font></label>
+			<input id="short-description" type="text" maxlength="64" class="input"/>
+		</div>
+
+		<div class="row" id="row-long-description">
+			<label for="long-description" class="label"><font color="white">Long description:</font></label>
+			<input id="long-description" type="text" class="input"/>
+		</div>
+		<div class="row" id="row-publisher">
+			<label for="publisher" class="label"><font color="white">Publisher:</font></label>
+			<input id="publisher" type="text" maxlength="64" class="input"/>
+		</div>
+	</div>
+
+	<div class="row" id="lang-selector">
+		<span class="label"><font color="white">Language:</font></span>
+		<label style="background-color: #eef;border-radius:3px;padding:2px 4px"><input type="radio" name="lang" onclick="changeLang(null)" checked="checked" id="default-lang">All</label>
+	</div>
+
+	<div class="row" id="lang-info" style="font-size:70%"><font color="white">Leaving these fields empty will copy default values over when saving</font></div>
+
+	<div style="text-align:center;margin-top:20px">
+		<input type="button" class="button" value="Load SMDH" onclick="clickLoadSMDH()" />
+		<input type="button" class="button blue-button" value="Save SMDH" onclick="clickSaveSMDH()" />
+	</div>
+</div>
+
+
+<div id="contributions">
+	<b>All support is appreciated!</b> <a href="https://www.paypal.me/marcrobledo/3" class="button donate-button" target="_blank" rel="nofollow">Donate</a>
+</div>
+
+
+<div id="footer">
+	<div id="author">SMDH Creator <small>v1.2 by <a href="http://usuaris.tinet.cat/mark/" target="_blank">Marc Robledo</a></small></div>
+	<div id="thanks">Based on <a href="https://github.com/gemisis/SMDH-Creator" target="_blank">SMDH-Creator by Gemisis</a></div>
+	<div id="extra">Remodeled By <a href="https://github.com/NoPainNoModz" target="_blank">NoPainNoModz</a></div>
+</div>
+</body></html>
